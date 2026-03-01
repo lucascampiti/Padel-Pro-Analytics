@@ -1,0 +1,125 @@
+Diccionario de Nomenclatura - Padel Analytics
+Este documento sirve como referencia técnica para entender la codificación utilizada en la recolección de datos crudos. 
+Estos códigos son procesados por el script cargador.py para su posterior estructuración en Azure SQL y visualización en Tableau. 
+
+1. Resultados del Punto 
+Define quién y cómo se finalizó la jugada.
+
+ej: Error de Juani (Jugador analizado).
+
+ec: Error del compañero.
+
+er: Error del rival.
+
+w : Winner (Juani).
+
+wc: Winner del compañero.
+
+wr1: Winner Rival 1 (Winner Rival Drive).
+
+wr2: Winner Rival 2 (Winner Rival Revés).
+
+2. Tipos de Golpes
+
+v: Víbora.
+
+vd: Volea de Drive.
+
+vr: Volea de Revés.
+
+spg: Salida de Pared de Globo.
+
+spc: Saida de Pared Chiquita
+
+g: Globo
+
+b: Bandeja
+
+s: Smash
+
+baj: Bajada de Pared
+
+toq: Toque
+
+bloq: Bloqueo
+
+bpro: Bote pronto
+
+sn: Saque nuestro
+
+rn: Resto nuestro
+
+ch: Chiquita
+
+r: Rulo
+
+gan: Gancho
+
+3. Calidad de Bola Recibida
+
+Clasificación de la dificultad de la bola previa al golpe analizado.
+
+F: Fácil.
+
+M: Media.
+
+D: Difícil.
+
+4. Intención Táctica
+
+man: Mantenimiento.
+
+ata: Ataque.
+
+def: Defensa.
+
+fin: Finalización.
+
+5. Ubicación en la Cancha (Zona)
+
+Define desde dónde se ejecuta el golpe:
+
+red: Zona de red (Ataque).
+
+mit: Mitad de cancha (Transición).
+
+fon: Fondo de cancha (Defensa).
+
+6. Fase del Punto
+fini: Inicio del punto (Saque/Resto).
+
+fdes: Desarrollo (Peloteo táctico).
+
+fdef: Fase de defensa extrema.
+
+7. Dirección de la Bola
+cr: Cruzado.
+
+p: Paralelo.
+
+med: medio.
+
+
+8. Tipo de Punto (Situación del Marcador)
+
+Define el contexto de puntuación en el que se desarrolla la jugada:
+
+normal: Punto regular del game.
+
+tb: Tie-break (Puntos decisivos del set).
+
+stp: Star Point / Punto de Oro (Decisión del game sin ventaja)
+
+9. Sistema de Marcador (Score)
+Define el estado del game actual, incluyendo situaciones de Deuce:
+
+0, 15, 30, 40: Puntuación estándar.
+
+adv1: Ventaja para el jugador analizado (Juani).
+
+adv2: Ventaja para la pareja rival.
+
+stp: Star Point (Punto de Oro / Punto decisivo).
+
+
+
